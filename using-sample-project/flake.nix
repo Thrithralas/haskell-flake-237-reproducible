@@ -19,7 +19,7 @@
             broken = false;
             jailbreak = true;
             custom = pkgs.haskell.lib.compose.overrideCabal (drv: {
-              libraryToolDepends = (drv.libraryToolDepends or []) ++ [ pkgs.llvmPackages_9.llvm.dev ];
+              libraryToolDepends = (drv.libraryToolDepends or []) ++ [ pkgs.hello ];
             });
           };
         };
