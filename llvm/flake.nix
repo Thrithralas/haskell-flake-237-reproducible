@@ -18,7 +18,7 @@
         # Typically, you just want a single project named "default". But
         # multiple projects are also possible, each using different GHC version.
         haskellProjects.default = {
-          #settings.llvm-hs.source = inputs.llvm-hs + "/llvm-hs"; 
+          #packages.llvm-hs.source = inputs.llvm-hs + "/llvm-hs"; 
           # ^ uncomment this and and change 9 to 15 below
           settings.llvm-hs = {
             broken = false;
